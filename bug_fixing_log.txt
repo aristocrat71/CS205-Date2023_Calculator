@@ -1,0 +1,50 @@
+ERROR 1: 
+
+In file included from proj1.cpp:2:
+datehead.h:1:17: warning: extra tokens at end of #ifndef directive
+    1 | #ifndef datehead.h
+      |                 ^
+datehead.h:2:9: warning: ISO C++11 requires whitespace after the macro name
+    2 | #define datehead.h
+      |         ^~~~~~~~
+proj1.cpp:5:7: error: redefinition of 'class Date2023'
+    5 | class Date2023 {
+      |       ^~~~~~~~
+datehead.h:5:7: note: previous definition of 'class Date2023'
+    5 | class Date2023
+      |       ^~~~~~~~
+
+----------------------------------------------------------------------------------
+
+ERROR 2: 
+
+c:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\Mitul\AppData\Local\Temp\ccDZHjcj.o:proj1_driver.c:(.text+0x23): undefined reference to `Date2023::Date2023(int)'
+c:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\Mitul\AppData\Local\Temp\ccDZHjcj.o:proj1_driver.c:(.text+0x2f): undefined reference to `Date2023::print()'
+collect2.exe: error: ld returned 1 exit status
+
+----------------------------------------------------------------------------------
+
+ERROR 3:
+
+(base) PS C:\Users\Mitul\Desktop\OOPS Project> g++ .\proj1_driver.cpp proj1.cpp -o proj1_driver
+.\proj1_driver.cpp:1:10: fatal error: c:\mingw64\include\c++\12.1.0\"proj1.h": Invalid argument
+    1 | #include <"proj1.h">
+      |          ^~~~~~~~~~~
+compilation terminated.
+
+----------------------------------------------------------------------------------
+
+ERROR 4:
+
+(base) PS C:\Users\Mitul\Desktop\OOPS Project> g++ .\proj1_driver.cpp proj1.cpp -o proj1_driver
+.\proj1_driver.cpp: In function 'int main()':
+.\proj1_driver.cpp:9:16: error: no matching function for call to 'Date2023::plusday()'
+    9 |     obj.plusday()
+      |     ~~~~~~~~~~~^~
+In file included from .\proj1_driver.cpp:1:
+.\proj1.h:16:10: note: candidate: 'void Date2023::plusday(int)'
+   16 |     void plusday(int);
+      |          ^~~~~~~
+.\proj1.h:16:10: note:   candidate expects 1 argument, 0 provided
+
+----------------------------------------------------------------------------------
