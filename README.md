@@ -21,6 +21,7 @@ February, and so forth). The third number is larger than or equal to 0. The prog
 should report an error (and exit) if the input is incorrect. If a day is not in 2023, the 
 program should output that. Following are a sample input file (redirect to be the 
 standard input) and the corresponding output.
+
 Input file:
 1 1 20
 1 1 31
@@ -32,6 +33,7 @@ Input file:
 6 10 100
 7 20 300
 12 20 2
+
 Output:
 20 days after Sunday, January 1, 2023 is Saturday, January 21, 2023.
 31 days after Sunday, January 1, 2023 is Wednesday, February 1, 2023.
@@ -43,6 +45,7 @@ Output:
 100 days after Saturday, June 10, 2023 is Monday, September 18, 2023.
 300 days after Thursday, July 20, 2023 is a date not in 2023.
 2 days after Wednesday, December 20, 2023 is Friday, December 22, 2023.
+
 ------------------------------------------------------------------------------------------------
 
 Thank you.
