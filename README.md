@@ -23,27 +23,47 @@ program should output that. Following are a sample input file (redirect to be th
 standard input) and the corresponding output.
 
 Input file:
+
 1 1 20
+
 1 1 31
+
 2 1 0
+
 1 1 32
+
 4 5 0
+
 2 1 28
+
 1 1 59
+
 6 10 100
+
 7 20 300
+
 12 20 2
 
 Output:
+
 20 days after Sunday, January 1, 2023 is Saturday, January 21, 2023.
+
 31 days after Sunday, January 1, 2023 is Wednesday, February 1, 2023.
+
 0 days after Wednesday, February 1, 2023 is Wednesday, February 1, 2023.
+
 32 days after Sunday, January 1, 2023 is Thursday, February 2, 2023.
+
 0 days after Wednesday, April 5, 2023 is Wednesday, April 5, 2023.
+
 28 days after Wednesday, February 1, 2023 is Wednesday, March 1, 2023.
+
 59 days after Sunday, January 1, 2023 is Wednesday, March 1, 2023.
+
 100 days after Saturday, June 10, 2023 is Monday, September 18, 2023.
+
 300 days after Thursday, July 20, 2023 is a date not in 2023.
+
 2 days after Wednesday, December 20, 2023 is Friday, December 22, 2023.
 
 ------------------------------------------------------------------------------------------------
