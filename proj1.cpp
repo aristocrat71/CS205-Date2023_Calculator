@@ -20,14 +20,17 @@ Date2023::Date2023(int dd)
             {
                 m = i;
                 d = dd - daytomonth[i - 1];
+                print();
                 return;
             }
         }
+        print();
     }
     else
     {
         cout << "ERROR Out of bounds" << endl;
-        exit(0);
+        cout << "(The exit(0) is commented out since we still need the program to run double parameterized constructor.)" << endl;
+        // exit(0);
     }
 }
 
