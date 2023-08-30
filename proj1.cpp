@@ -44,7 +44,7 @@ Date2023::Date2023(int dd, int mm)
             d = dd;
         else
         {
-            cout << "Invalid" << endl;
+            cout << "ERROR : Invalid date" << endl;
             exit(0);
         }
     }
@@ -52,7 +52,7 @@ Date2023::Date2023(int dd, int mm)
     {
         m = -1;
         d = -1;
-        cout << "Invalid" << endl;
+        cout << "ERROR : Invalid date" << endl;
         exit(0);
     }
 }
@@ -67,7 +67,7 @@ void Date2023::setDate(int dd, int mm)
             d = dd;
         else
         {
-            cout << "Invalid" << endl;
+            cout << "ERROR : Invalid date" << endl;
             exit(0);
         }
     }
@@ -75,7 +75,7 @@ void Date2023::setDate(int dd, int mm)
     {
         m = -1;
         d = -1;
-        cout << "Invalid" << endl;
+        cout << "ERROR : Invalid date" << endl;
         exit(0);
     }
 }
